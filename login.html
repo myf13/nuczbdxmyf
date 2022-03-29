@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my web</title>
+  <script>
+      window.onload=function(){
+      var submit=document.getElementById("submit");
+      submit.onclick=function(){
+          var regExp=/^[0-9]{4,10}@qq.com$/; 
+          var email=document.getElementById("email").value;
+          if(!regExp.test(email)){
+              alert("请输入正确的邮箱地址");
+          }
+          if(regExp.test(email)) {
+              alert("邮箱地址正确");
+              console.log(document.getElementById("email").value);
+              return true;
+          }
+         
+          }
+      }
+     
+      
+  </script>
+
+</head>
+<body>
+ 邮箱地址:<input type="text" id="email">
+   <br>
+   <br>
+   <input type="submit" id="submit">
+</body>
+</html>
