@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任名妍的web</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            font-size: 40px;        
+        }
+        h1:hover{
+            color: red;
+        }
+        hr{
+            
+            background-color: black;
+            height: 3px;
+            border: 0px;          
+        }
+        h2{
+            text-align: center;
+        }
+        #img1{
+            width: 200px;
+            height: 300px;
+            margin-left: 500px;
+        }
+        
+        #p2{
+            font-size: 20px;
+            text-align: center;
+        }
+         #p2:hover{
+            color:red;
+            font-size: 30px;
+        } 
+        p{
+            text-align: center;
+        }
+        #div2{
+            padding-left: 300px;
+        }
+        
+        table{
+           text-align:center; 
+        }
+       img{
+           width: 300px;
+           height: 500px;         
+       }
+       
+        #img4{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        #div4{
+           padding-left:500px;
+           position: absolute;
+        }
+        
+    </style>
+    <script>
+        window.onload=function(){
+            var img4=document.getElementById("img4");
+        
+            img4.onmousedown=function(){
+            drag(img4)
+            }
+            function drag(obj){
+				 	obj.onmousedown=function(event){
+				
+				event=event||window.event;
+				var ol=event.clientX-obj.offsetLeft;
+				var ot=event.clientY-obj.offsetTop;
+				// 2.当鼠标移动时被拖拽元素跟随鼠标移动 onmousemove。
+				document.onmousemove=function(event){
+					//div的偏移量.clientX-元素.offsetLeft
+					//div的偏移量.clienty-元素.offsetTop
+					
+					event=event||window.event;
+					//当鼠标移动的时候被拖拽元素跟随鼠标移动
+					//获取鼠标的坐标
+					var left=event.clientX-ol;
+					var top=event.clientY-ot;
+					
+					
+					obj.style.left=left+"px";
+					obj.style.top=top+"px";
+				};
+				
+				}
+				 //3.当鼠标松开时，被拖拽元素固定在当前位置 onmouseup。
+				 document.onmouseup=function(){
+				 	//当鼠标松开的时候，被拖拽元素固定当前位置。
+				 	//取消document的onmousemove事件
+				 	document.onmousemove=null;
+				 	//取消document的onmouseup
+				 	document.onmouseup=null;
+				 	
+				 };
+				 }
+        }
+    </script>
+</head>
+<body background="./任背景图.jpg" style="background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;" >
+    <h1>欢迎来到任名妍的世界</h1>
+    <hr>
+    
+    <h2>个人介绍</h2>
+    <div id="div1">
+        <img src="./微信图片_20220329110228.jpg" id="img1"> 
+    </div>
+    <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;
+        本人任名妍，来自辽宁省，现就读于辽宁中医药大学，护理学专业。身高172cm，体重：52kg.
+    </p>
+    <div>
+        
+       本人大一入学以来，积极参与班级活动，文德工作室与护理学院团委副部长，辽宁中医药大学护理学院青苑志愿者协会会长。本人学习成绩优异，爱好广泛，性格开朗，与人为善，受到校领导的表扬，以及辽宁中医药大学校长奖章的获得者。
+    
+    </div>
+    <h2>我的日常生活：</h2>
+    <div id="div2">
+        <table>
+        <tr>
+            <td>
+                <a href="./微信图片_20220329152316.jpg"><img src="./微信图片_20220329152316.jpg"></a>
+            </td>
+            <td>
+                <a href="./微信图片_20220329152335.jpg"><img src="./微信图片_20220329152335.jpg" ></a>
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <a href="./微信图片_20220329152345.jpg"><img src="./微信图片_20220329152345.jpg"></a>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <br>
+    <p>这么优秀的任名妍，点击下方图片便可带她走！！！！</p>
+  
+   
+   <br>
+   <div id="div4">
+       <img src="./微信图片_20220329152258.jpg" id="img4">
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+<hr>
+<h1>这就是我的舍友任名妍了</h1>
+</body>
+</html> 
