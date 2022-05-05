@@ -1,0 +1,166 @@
+.topbar-wrapper{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0px;
+    background-color:rgb(247, 247, 248);
+    vertical-align:middle;
+          line-height: middle;
+          z-index: 999;
+}
+.topbar-left .topbar-right {
+    float: left;
+   
+}
+.service li{
+    margin-top: 20px;
+}
+.topbar-wrapper li{
+  
+   display: block;
+   float: left;
+   margin-left: 120px;
+}
+.topbar-right{
+    margin-top: 20px;
+}
+.topbar-wrapper .topbar-right .service li:hover a{
+    color: rgb(54,106,185);
+    
+}
+.topbar-wrapper .topbar-right .service li a{
+    font-size: 20px;
+    color:black;
+    text-decoration: none;
+}
+.roobt img{
+    /* width: 100px; */
+    height: 100px;
+}
+.list-box-item {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.list-box-item-left {
+	width: 400px;
+	height: 500px;
+	margin-left: 200px;
+	margin-top: 150px;
+}
+.list-box-item-left a{
+    margin-top: auto;
+    text-decoration: none;
+    font-size:30px ;
+    color:black ;
+}
+.list-box-item-left a:hover{
+    color: black;
+    font-size: 35px;
+    text-decoration:none;
+}
+.list-box-item-right {
+	width: 300px;
+	height: 300px;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+.focus {
+    width: 100%;
+    height: 300px;
+    background-color:white;
+    margin: 0px auto;
+    padding-top: 130PX;
+}
+
+.focus img {
+    width: 100%;
+    height: 600px!important;
+}
+.background-list{
+    width: 1200px;
+    height: 500px;
+    margin-top: 700px;
+    margin-left: 110px;
+    
+    
+}
+/* .background-list ul{
+    text-align: center;
+    
+} */
+.background-list li:hover{
+    background-color:rgb(62,107,181);
+}
+.background-list li a:hover{
+    color: white;
+    text-decoration: none;
+    
+}
+.background-list li a{
+    color: black;
+    font-size: 25px;
+   text-decoration: none;
+   
+}
+.background-list li{
+    display: block;
+    width: 1200px;
+    height: 112px;
+    padding-top: 43px;
+    padding-left: 50px;
+}
+.background-list-text{
+margin-left: 45px;
+width: 1200px;
+}
+h1{
+    padding-left: 165px;
+    background-color: rgb(238, 238, 238);
+    display: block;
+    height: 90px;
+    padding-top: 20px;
+    
+}
+
+.bottom img{
+    width: 300px;
+}
+.bottom{
+    margin-top: 100px;
+    width:100%;
+    height: 400px;
+    background-color: rgb(238, 238, 238);
+   
+}
+.bottom-left{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.bottom-right .nav{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.nav li {
+    float: left;
+    display: block;
+    margin-left: 120px;
+}
+.nav a{
+    font-size: 15px;
+    color: black;
+}
+
+.nav .top{
+    font-size: 20px;
+}
+.nav p{
+    margin-left: 17px;
+}
+.bottom-bottom p{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 22px;
+}
